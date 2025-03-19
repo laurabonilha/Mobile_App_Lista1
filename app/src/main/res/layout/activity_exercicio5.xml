@@ -38,11 +38,5 @@
         android:text="Salvar Preferências"
         android:layout_marginBottom="16dp"/>
 
-    <!-- Botão Voltar ao Menu -->
-    <Button
-        android:id="@+id/btnVoltarMenu"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Voltar ao Menu Principal"/>
 
 </LinearLayout>

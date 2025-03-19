@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Exercicio1Activity extends AppCompatActivity {
 
     private EditText edtNome, edtIdade;
-    private Button btnVerificar, btnVoltar;
+    private Button btnVerificar;
     private TextView tvResultado;
 
     @Override
@@ -23,7 +23,6 @@ public class Exercicio1Activity extends AppCompatActivity {
         edtNome = findViewById(R.id.edtNome);
         edtIdade = findViewById(R.id.edtIdade);
         btnVerificar = findViewById(R.id.btnVerificar);
-        btnVoltar = findViewById(R.id.btnVoltar);  // Botão para voltar
         tvResultado = findViewById(R.id.tvResultado);
 
         // Definindo o clique do botão de Verificar
@@ -49,15 +48,6 @@ public class Exercicio1Activity extends AppCompatActivity {
             }
         });
 
-        // Definindo o clique do botão de Voltar
-        btnVoltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Volta para a MainActivity
-                Intent intent = new Intent(Exercicio1Activity.this, MainActivity.class);
-                startActivity(intent);
-                finish();  // Finaliza a Exercicio1Activity
-            }
-        });
+
     }
 }

@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Exercicio5Activity extends AppCompatActivity {
 
     private CheckBox cbNotificacoes, cbModoEscuro, cbLembrarLogin;
-    private Button btnSalvarPreferencias, btnVoltarMenu;
+    private Button btnSalvarPreferencias;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,6 @@ public class Exercicio5Activity extends AppCompatActivity {
         cbModoEscuro = findViewById(R.id.cbModoEscuro);
         cbLembrarLogin = findViewById(R.id.cbLembrarLogin);
         btnSalvarPreferencias = findViewById(R.id.btnSalvarPreferencias);
-        btnVoltarMenu = findViewById(R.id.btnVoltarMenu);
 
         // Configurando o clique no botão "Salvar Preferências"
         btnSalvarPreferencias.setOnClickListener(v -> {
@@ -50,12 +49,5 @@ public class Exercicio5Activity extends AppCompatActivity {
             }
         });
 
-        // Configurando o clique no botão "Voltar ao Menu"
-        btnVoltarMenu.setOnClickListener(v -> {
-            // Criando a intenção para voltar ao menu principal
-            Intent intent = new Intent(Exercicio5Activity.this, MainActivity.class);
-            startActivity(intent);
-            finish();  // Finaliza a activity atual para evitar que o usuário volte a ela com o botão de voltar
-        });
     }
 }

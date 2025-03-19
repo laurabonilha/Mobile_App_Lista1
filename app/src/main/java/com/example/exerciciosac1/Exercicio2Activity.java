@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Exercicio2Activity extends AppCompatActivity {
 
     private EditText edtValor1, edtValor2;
-    private Button btnSomar, btnSubtrair, btnMultiplicar, btnDividir, btnVoltar;
+    private Button btnSomar, btnSubtrair, btnMultiplicar, btnDividir;
     private TextView tvResultado;
 
     @Override
@@ -27,7 +27,6 @@ public class Exercicio2Activity extends AppCompatActivity {
         btnMultiplicar = findViewById(R.id.btnMultiplicar);
         btnDividir = findViewById(R.id.btnDividir);
         tvResultado = findViewById(R.id.tvResultado);
-        btnVoltar = findViewById(R.id.btnVoltar);
 
         // Definindo os cliques dos botões de operações
         btnSomar.setOnClickListener(new View.OnClickListener() {
@@ -59,15 +58,7 @@ public class Exercicio2Activity extends AppCompatActivity {
         });
 
         // Configurando o clique do botão de voltar
-        btnVoltar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // Intent para voltar à MainActivity
-                Intent intent = new Intent(Exercicio2Activity.this, MainActivity.class);
-                startActivity(intent);
-                finish(); // Fecha a atividade atual
-            }
-        });
+
     }
 
     // Função para realizar a operação com base no tipo

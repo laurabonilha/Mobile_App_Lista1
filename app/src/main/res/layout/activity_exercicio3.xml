@@ -10,14 +10,6 @@
         android:orientation="vertical"
         android:padding="16dp">
 
-        <!-- Botão Voltar ao Menu Principal -->
-        <Button
-            android:id="@+id/btnVoltar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Voltar"
-            android:layout_marginBottom="16dp"/>
-
         <!-- Campo Nome -->
         <EditText
             android:id="@+id/edtNome"

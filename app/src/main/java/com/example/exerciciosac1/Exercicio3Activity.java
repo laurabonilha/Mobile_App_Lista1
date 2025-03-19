@@ -15,7 +15,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Exercicio3Activity extends AppCompatActivity {
 
     private EditText edtNome, edtIdade, edtUF, edtCidade, edtTelefone, edtEmail;
-    private Button btnCadastrar, btnVoltar;
+    private Button btnCadastrar;
     private RadioGroup radioGroupTamanho;
     private CheckBox cbVermelho, cbAzul, cbVerde, cbPreto;
 
@@ -32,7 +32,6 @@ public class Exercicio3Activity extends AppCompatActivity {
         edtTelefone = findViewById(R.id.edtTelefone);
         edtEmail = findViewById(R.id.edtEmail);
         btnCadastrar = findViewById(R.id.btnCadastrar);
-        btnVoltar = findViewById(R.id.btnVoltar);
         radioGroupTamanho = findViewById(R.id.radioGroupTamanho);
         cbVermelho = findViewById(R.id.cbVermelho);
         cbAzul = findViewById(R.id.cbAzul);
@@ -67,12 +66,5 @@ public class Exercicio3Activity extends AppCompatActivity {
             System.out.println("Cadastro realizado: " + nome + ", " + idade + ", " + uf + ", " + cidade + ", " + telefone + ", " + email + ", Tamanho: " + tamanho + ", Cores: " + coresPreferidas);
         });
 
-        // Ação do botão "Voltar ao Menu Principal"
-        btnVoltar.setOnClickListener(v -> {
-            // Intent para voltar à tela principal (MainActivity)
-            Intent intent = new Intent(Exercicio3Activity.this, MainActivity.class);
-            startActivity(intent);
-            finish(); // Opcional: finalizar a atividade atual para não voltar a ela ao pressionar o botão de voltar do dispositivo
-        });
     }
 }
