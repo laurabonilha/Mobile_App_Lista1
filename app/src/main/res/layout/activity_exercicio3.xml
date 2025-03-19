@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Botão Voltar ao Menu Principal -->
+        <Button
+            android:id="@+id/btnVoltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Voltar"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Campo Nome -->
+        <EditText
+            android:id="@+id/edtNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Campo Idade -->
+        <EditText
+            android:id="@+id/edtIdade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Idade"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Campo UF -->
+        <EditText
+            android:id="@+id/edtUF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="UF"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Campo Cidade -->
+        <EditText
+            android:id="@+id/edtCidade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Cidade"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Campo Telefone -->
+        <EditText
+            android:id="@+id/edtTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefone"
+            android:inputType="phone"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Campo Email -->
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- RadioButtons para Tamanho -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tamanho"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupTamanho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+            <RadioButton
+                android:id="@+id/rbP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P"/>
+            <RadioButton
+                android:id="@+id/rbM"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="M"/>
+            <RadioButton
+                android:id="@+id/rbG"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="G"/>
+        </RadioGroup>
+
+        <!-- Checkbox para Cores -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cores Preferidas"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <CheckBox
+            android:id="@+id/cbVermelho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vermelho"
+            android:layout_marginBottom="8dp"/>
+        <CheckBox
+            android:id="@+id/cbAzul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Azul"
+            android:layout_marginBottom="8dp"/>
+        <CheckBox
+            android:id="@+id/cbVerde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verde"
+            android:layout_marginBottom="8dp"/>
+        <CheckBox
+            android:id="@+id/cbPreto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Preto"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botão Cadastrar -->
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cadastrar"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+</ScrollView>

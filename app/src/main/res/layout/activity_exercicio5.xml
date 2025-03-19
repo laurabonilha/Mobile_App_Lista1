@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- CheckBox para Receber Notificações -->
+    <CheckBox
+        android:id="@+id/cbNotificacoes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receber notificações"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- CheckBox para Modo Escuro -->
+    <CheckBox
+        android:id="@+id/cbModoEscuro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Modo escuro"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- CheckBox para Lembrar Login -->
+    <CheckBox
+        android:id="@+id/cbLembrarLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lembrar login"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botão Salvar Preferências -->
+    <Button
+        android:id="@+id/btnSalvarPreferencias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar Preferências"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Botão Voltar ao Menu -->
+    <Button
+        android:id="@+id/btnVoltarMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar ao Menu Principal"/>
+
+</LinearLayout>
